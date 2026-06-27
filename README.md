@@ -9,6 +9,9 @@
 | Integrante                     | Rol                                                     |
 | ------------------------------ | ------------------------------------------------------- |
 | Leidy Carolina Fajardo Sanchez | Diseño UX/UI, documentación y maquetación de wireframes |
+| Sebastián Aguilar Guido        | Diseño de wireframes                                    |
+| Juan Ignacio Castro Molina     | Diseño de wireframes                                    |
+| Fiorella De Mey Rojas          | Apoyo en documentación y diseño                         |
 
 ## Descripción del proyecto
 
@@ -18,22 +21,9 @@ El sistema busca facilitar la gestión de programas educativos, usuarios, docent
 
 ## Alcance del proyecto
 
-Para esta primera entrega, el proyecto se enfoca en la etapa de análisis y diseño inicial. Se desarrollan wireframes que representan la estructura visual y la navegación de las principales funcionalidades del sistema.
+Para esta primera entrega, el proyecto se enfoca en la etapa de análisis y diseño inicial. Se desarrollaron wireframes que representan la estructura visual y la navegación de las principales funcionalidades del sistema.
 
-El alcance incluye la maquetación de funcionalidades para dos tipos de usuarios principales:
-
-### Usuario Administrador
-
-* Inicio de sesión.
-* Dashboard administrativo con resumen de métricas.
-* Gestión de programas educativos.
-* Gestión de usuarios.
-
-### Usuario Docente/Terapeuta
-
-* Dashboard con grupos y estudiantes asignados.
-* Gestión de Planes Educativos Individualizados (PEI).
-* Registro de progreso y observaciones de estudiantes.
+El alcance contempla funcionalidades para los distintos perfiles de usuario, incluyendo administrador, docente/terapeuta y estudiante, con énfasis en la gestión académica y el seguimiento del proceso educativo.
 
 ## Funcionalidades representadas en los wireframes
 
@@ -43,19 +33,19 @@ El alcance incluye la maquetación de funcionalidades para dos tipos de usuarios
 4. Gestión de programas educativos.
 5. Gestión de usuarios.
 6. Dashboard del docente/terapeuta.
-7. Gestión de PEI.
-8. Registro de progreso.
+7. Mi Progreso Diario (Estudiante).
 
 ## Carpeta de documentación
 
-Los wireframes del proyecto se encuentran en la carpeta:
+La documentación y los wireframes del proyecto se encuentran en la carpeta:
 
-`docs/wireframes.pdf`
+`docs/Hellen Keller Gestión Integral.pdf`
 
 ## Objetivo del diseño
 
-El diseño propuesto busca ser claro, accesible y funcional, utilizando una estructura visual organizada y colores de alta visibilidad. La interfaz está pensada para facilitar la navegación de distintos tipos de usuarios y apoyar la gestión educativa especializada del Centro Nacional de Educación Hellen Keller.
+El diseño propuesto busca ser claro, accesible y funcional, utilizando una estructura visual organizada y elementos de accesibilidad como alto contraste y asistencia mediante audio. La interfaz está pensada para facilitar la navegación de distintos tipos de usuarios y apoyar la gestión educativa especializada del Centro Nacional de Educación Hellen Keller.
 
 ## Estado del proyecto
 
-Primera entrega: análisis inicial, definición del alcance y diseño de wireframes.
+**Primera entrega:** análisis inicial, definición del alcance y diseño de wireframes.
+
