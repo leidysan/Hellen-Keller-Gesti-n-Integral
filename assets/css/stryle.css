@@ -1,0 +1,150 @@
+/* ========================================
+   HELLEN KELLER GESTIÓN INTEGRAL
+   Hoja principal de estilos
+======================================== */
+
+:root{
+
+    --azul:#0B63CE;
+    --azulOscuro:#084298;
+    --gris:#f4f6f9;
+    --blanco:#ffffff;
+    --texto:#2c3e50;
+    --borde:#dcdcdc;
+    --verde:#198754;
+    --rojo:#dc3545;
+    --sombra:0 5px 15px rgba(0,0,0,.10);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--gris);
+    color:var(--texto);
+
+}
+
+header{
+
+    background:var(--azul);
+    color:white;
+    padding:20px;
+
+}
+
+nav{
+
+    background:var(--azulOscuro);
+    display:flex;
+    gap:15px;
+    padding:15px;
+
+}
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+nav a:hover{
+
+    text-decoration:underline;
+
+}
+
+main{
+
+    padding:30px;
+
+}
+
+.card{
+
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:var(--sombra);
+    margin-bottom:20px;
+
+}
+
+button{
+
+    background:var(--azul);
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:var(--azulOscuro);
+
+}
+
+input,
+select{
+
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border:1px solid var(--borde);
+    border-radius:8px;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:var(--azul);
+    color:white;
+    padding:12px;
+
+}
+
+td{
+
+    padding:12px;
+    border-bottom:1px solid #ddd;
+
+}
+
+footer{
+
+    background:var(--azul);
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+
+}
+
+@media(max-width:768px){
+
+    nav{
+
+        flex-direction:column;
+
+    }
+
+}
