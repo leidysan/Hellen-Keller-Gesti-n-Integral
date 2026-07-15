@@ -6,12 +6,13 @@
 
 ## Integrantes y roles
 
-| Integrante | Rol |
-|---|---|
-| Leidy Carolina Fajardo Sanchez | Diseño UX/UI, documentación, maquetación de wireframes e implementación frontend |
-| Sebastián Aguilar Guido | Diseño de wireframes |
-| Juan Ignacio Castro Molina | Diseño de wireframes |
-| Fiorella De Mey Rojas | Apoyo en documentación y diseño |
+| Integrante                         | Rol                                                                                                               |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Leidy Carolina Fajardo Sanchez** | Líder del proyecto, integración del frontend, desarrollo HTML/CSS, documentación y gestión del repositorio GitHub |
+| Sebastián Aguilar Guido            | Apoyo en el diseño de wireframes y propuesta de estructura HTML                                                   |
+| Juan Ignacio Castro Molina         | Apoyo en estilos CSS y propuesta de diseño visual                                                                 |
+| Fiorella De Mey Rojas              | Apoyo en documentación y planificación del proyecto                                                               |
+
 
 ## Descripción del proyecto
 
