@@ -1,23 +1,283 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hellen Keller Gestión Integral</title>
+
+    <meta
+        name="description"
+        content="Panel principal del administrador de Hellen Keller Gestión Integral">
+
+    <title>Administrador | Hellen Keller Gestión Integral</title>
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Hellen Keller Gestión Integral</h1>
+    <header class="encabezado-sistema">
+
+        <div>
+            <h1>Hellen Keller Gestión Integral</h1>
+            <p>Panel de administración</p>
+        </div>
+
+        <a class="boton-salir" href="index.html">
+            Cerrar sesión
+        </a>
+
     </header>
 
-    <main>
-        <h2>Página en construcción</h2>
+    <nav class="menu-principal" aria-label="Navegación del administrador">
+
+        <a href="administrador-dashboard.html" aria-current="page">
+            Inicio
+        </a>
+
+        <a href="gestion-usuarios.html">
+            Gestión de usuarios
+        </a>
+
+        <a href="gestion-programas.html">
+            Programas educativos
+        </a>
+
+    </nav>
+
+    <main class="contenido-dashboard">
+
+        <section class="bienvenida">
+
+            <h2>Bienvenida, persona administradora</h2>
+
+            <p>
+                Desde este panel puede consultar el estado general del sistema
+                y acceder a las principales funciones administrativas.
+            </p>
+
+        </section>
+
+        <section
+            class="rejilla-indicadores"
+            aria-label="Resumen general del sistema">
+
+            <article class="tarjeta-indicador">
+
+                <span class="icono-indicador" aria-hidden="true">
+                    👥
+                </span>
+
+                <div>
+                    <h3>Usuarios registrados</h3>
+
+                    <p class="numero-indicador">
+                        248
+                    </p>
+
+                    <a href="gestion-usuarios.html">
+                        Ver usuarios
+                    </a>
+                </div>
+
+            </article>
+
+            <article class="tarjeta-indicador">
+
+                <span class="icono-indicador" aria-hidden="true">
+                    📚
+                </span>
+
+                <div>
+                    <h3>Programas educativos</h3>
+
+                    <p class="numero-indicador">
+                        12
+                    </p>
+
+                    <a href="gestion-programas.html">
+                        Ver programas
+                    </a>
+                </div>
+
+            </article>
+
+            <article class="tarjeta-indicador">
+
+                <span class="icono-indicador" aria-hidden="true">
+                    👩‍🏫
+                </span>
+
+                <div>
+                    <h3>Docentes y terapeutas</h3>
+
+                    <p class="numero-indicador">
+                        36
+                    </p>
+
+                    <a href="gestion-usuarios.html">
+                        Consultar personal
+                    </a>
+                </div>
+
+            </article>
+
+            <article class="tarjeta-indicador">
+
+                <span class="icono-indicador" aria-hidden="true">
+                    🎓
+                </span>
+
+                <div>
+                    <h3>Estudiantes activos</h3>
+
+                    <p class="numero-indicador">
+                        164
+                    </p>
+
+                    <a href="gestion-usuarios.html">
+                        Consultar estudiantes
+                    </a>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="seccion-tabla">
+
+            <div class="encabezado-seccion">
+
+                <div>
+                    <h2>Actividad reciente</h2>
+
+                    <p>
+                        Últimos movimientos registrados en el sistema.
+                    </p>
+                </div>
+
+                <button class="boton-secundario" type="button">
+                    Actualizar información
+                </button>
+
+            </div>
+
+            <div class="tabla-responsive">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Usuario</th>
+                            <th scope="col">Rol</th>
+                            <th scope="col">Actividad</th>
+                            <th scope="col">Estado</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>14/07/2026</td>
+                            <td>Laura Rodríguez</td>
+                            <td>Docente</td>
+                            <td>Actualizó el progreso de un estudiante</td>
+                            <td>
+                                <span class="estado estado-exitoso">
+                                    Completado
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>14/07/2026</td>
+                            <td>Carlos Méndez</td>
+                            <td>Terapeuta</td>
+                            <td>Registró una nueva observación</td>
+                            <td>
+                                <span class="estado estado-exitoso">
+                                    Completado
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>13/07/2026</td>
+                            <td>Ana Vargas</td>
+                            <td>Administradora</td>
+                            <td>Creó una nueva cuenta de usuario</td>
+                            <td>
+                                <span class="estado estado-pendiente">
+                                    Pendiente
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <section class="acciones-rapidas">
+
+            <h2>Acciones rápidas</h2>
+
+            <div class="rejilla-acciones">
+
+                <a class="tarjeta-accion" href="gestion-usuarios.html">
+
+                    <span aria-hidden="true">➕</span>
+
+                    <strong>Registrar usuario</strong>
+
+                    <small>
+                        Agregar estudiantes, docentes o encargados.
+                    </small>
+
+                </a>
+
+                <a class="tarjeta-accion" href="gestion-programas.html">
+
+                    <span aria-hidden="true">📘</span>
+
+                    <strong>Crear programa</strong>
+
+                    <small>
+                        Registrar una nueva propuesta educativa.
+                    </small>
+
+                </a>
+
+                <a class="tarjeta-accion" href="docente-dashboard.html">
+
+                    <span aria-hidden="true">👁️</span>
+
+                    <strong>Vista del docente</strong>
+
+                    <small>
+                        Consultar la interfaz del personal educativo.
+                    </small>
+
+                </a>
+
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
-        <p>Centro Nacional de Educación Hellen Keller</p>
+
+        <p>
+            © 2026 Centro Nacional de Educación Hellen Keller
+        </p>
+
     </footer>
 
 </body>
+
 </html>

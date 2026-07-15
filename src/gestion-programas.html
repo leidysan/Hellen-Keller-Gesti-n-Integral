@@ -4,18 +4,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hellen Keller Gestión Integral</title>
+
+    <meta
+        name="description"
+        content="Gestión de programas educativos del sistema Hellen Keller Gestión Integral">
+
+    <title>Programas educativos | Hellen Keller Gestión Integral</title>
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Hellen Keller Gestión Integral</h1>
+    <header class="encabezado-sistema">
+
+        <div>
+            <h1>Hellen Keller Gestión Integral</h1>
+            <p>Gestión de programas educativos</p>
+        </div>
+
+        <a class="boton-salir" href="index.html">
+            Cerrar sesión
+        </a>
+
     </header>
 
-    <main>
-        <h2>Página en construcción</h2>
-        <p>Esta pantalla será desarrollada durante la implementación del proyecto.</p>
+    <nav class="menu-principal" aria-label="Navegación del administrador">
+
+        <a href="administrador-dashboard.html">
+            Inicio
+        </a>
+
+        <a href="gestion-usuarios.html">
+            Gestión de usuarios
+        </a>
+
+        <a href="gestion-programas.html" aria-current="page">
+            Programas educativos
+        </a>
+
+    </nav>
+
+    <main class="contenido-dashboard">
+
+        <section class="encabezado-pagina">
+
+            <div>
+                <h2>Programas educativos</h2>
+
+                <p>
+                    Administre los programas de formación y acompañamiento
+                    disponibles para la población estudiantil.
+                </p>
+            </div>
+
+            <button class="boton-principal" type="button">
+                + Crear programa
+            </button>
+
+        </section>
+
+        <section class="panel-filtros" aria-label="Filtros de programas">
+
+            <div class="campo-filtro">
+
+                <label for="buscar-programa">
+                    Buscar programa
+                </label>
+
+                <input
+                    type="search"
+                    id="buscar-programa"
+                    name="buscar-programa"
+                    placeholder="Nombre o responsable">
+
+            </div>
+
+            <div class="campo-filtro">
+
+                <label for="filtro-area">
+                    Área
+                </label>
+
+                <select id="filtro-area" name="filtro-area">
+                    <option value="">Todas las áreas</option>
+                    <option value="academica">Académica</option>
+                    <option value="terapeutica">Terapéutica</option>
+                    <option value="orientacion">Orientación</option>
+                    <option value="tecnologia">Tecnología asistiva</option>
+                </select>
+
+            </div>
+
+            <div class="campo-filtro">
+
+                <label for="estado-programa">
+                    Estado
+                </label>
+
+                <select id="estado-programa" name="estado-programa">
+                    <option value="">Todos</option>
+                    <option value="activo">Activo</option>
+                    <option value="planificacion">En planificación</option>
+                    <option value="finalizado">Finalizado</option>
+                </select>
+
+            </div>
+
+            <button class="boton-secundario boton-filtrar" type="button">
+                Aplicar filtros
+            </button>
+
+        </section>
+
+        <section class="rejilla-programas" aria-label="Listado de programas educativos">
+
+            <article class="tarjeta-programa">
+
+                <div class="encabezado-programa">
+                    <span class="icono-programa" aria-hidden="true">📘</span>
+
+                    <span class="estado estado-exitoso">
+                        Activo
+                    </span>
+                </div>
+
+                <h3>Habilidades para la vida independiente</h3>
+
+                <p>
+                    Programa orientado al desarrollo de autonomía personal,
+                    organización diaria y participación en la comunidad.
+                </p>
+
+                <dl class="datos-programa">
+                    <div>
+                        <dt>Área</dt>
+                        <dd>Orientación</dd>
+                    </div>
+
+                    <div>
+                        <dt>Responsable</dt>
+                        <dd>María González</dd>
+                    </div>
+
+                    <div>
+                        <dt>Participantes</dt>
+                        <dd>24 estudiantes</dd>
+                    </div>
+                </dl>
+
+                <div class="acciones-programa">
+                    <button class="boton-tabla" type="button">
+                        Ver detalles
+                    </button>
+
+                    <button class="boton-tabla" type="button">
+                        Editar
+                    </button>
+                </div>
+
+            </article>
+
+            <article class="tarjeta-programa">
+
+                <div class="encabezado-programa">
+                    <span class="icono-programa" aria-hidden="true">🧠</span>
+
+                    <span class="estado estado-exitoso">
+                        Activo
+                    </span>
+                </div>
+
+                <h3>Estimulación cognitiva</h3>
+
+                <p>
+                    Actividades de memoria, atención y resolución de problemas
+                    adaptadas a las necesidades de cada estudiante.
+                </p>
+
+                <dl class="datos-programa">
+                    <div>
+                        <dt>Área</dt>
+                        <dd>Terapéutica</dd>
+                    </div>
+
+                    <div>
+                        <dt>Responsable</dt>
+                        <dd>Carlos Méndez</dd>
+                    </div>
+
+                    <div>
+                        <dt>Participantes</dt>
+                        <dd>18 estudiantes</dd>
+                    </div>
+                </dl>
+
+                <div class="acciones-programa">
+                    <button class="boton-tabla" type="button">
+                        Ver detalles
+                    </button>
+
+                    <button class="boton-tabla" type="button">
+                        Editar
+                    </button>
+                </div>
+
+            </article>
+
+            <article class="tarjeta-programa">
+
+                <div class="encabezado-programa">
+                    <span class="icono-programa" aria-hidden="true">💻</span>
+
+                    <span class="estado estado-pendiente">
+                        En planificación
+                    </span>
+                </div>
+
+                <h3>Tecnología asistiva</h3>
+
+                <p>
+                    Capacitación en el uso de lectores de pantalla, ampliadores,
+                    dispositivos móviles y herramientas accesibles.
+                </p>
+
+                <dl class="datos-programa">
+                    <div>
+                        <dt>Área</dt>
+                        <dd>Tecnología asistiva</dd>
+                    </div>
+
+                    <div>
+                        <dt>Responsable</dt>
+                        <dd>Laura Rodríguez</dd>
+                    </div>
+
+                    <div>
+                        <dt>Participantes</dt>
+                        <dd>15 estudiantes</dd>
+                    </div>
+                </dl>
+
+                <div class="acciones-programa">
+                    <button class="boton-tabla" type="button">
+                        Ver detalles
+                    </button>
+
+                    <button class="boton-tabla" type="button">
+                        Editar
+                    </button>
+                </div>
+
+            </article>
+
+            <article class="tarjeta-programa">
+
+                <div class="encabezado-programa">
+                    <span class="icono-programa" aria-hidden="true">🗣️</span>
+
+                    <span class="estado estado-exitoso">
+                        Activo
+                    </span>
+                </div>
+
+                <h3>Comunicación y habilidades sociales</h3>
+
+                <p>
+                    Espacio para fortalecer la comunicación, la convivencia
+                    y la participación en distintos entornos sociales.
+                </p>
+
+                <dl class="datos-programa">
+                    <div>
+                        <dt>Área</dt>
+                        <dd>Académica</dd>
+                    </div>
+
+                    <div>
+                        <dt>Responsable</dt>
+                        <dd>Daniela Vargas</dd>
+                    </div>
+
+                    <div>
+                        <dt>Participantes</dt>
+                        <dd>20 estudiantes</dd>
+                    </div>
+                </dl>
+
+                <div class="acciones-programa">
+                    <button class="boton-tabla" type="button">
+                        Ver detalles
+                    </button>
+
+                    <button class="boton-tabla" type="button">
+                        Editar
+                    </button>
+                </div>
+
+            </article>
+
+        </section>
+
     </main>
 
     <footer>

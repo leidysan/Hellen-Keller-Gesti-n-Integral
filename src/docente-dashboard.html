@@ -4,23 +4,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hellen Keller Gestión Integral</title>
+    <title>Dashboard Docente | Hellen Keller Gestión Integral</title>
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
 
-    <header>
+<header class="encabezado-sistema">
+
+    <div>
         <h1>Hellen Keller Gestión Integral</h1>
-    </header>
+        <p>Panel del docente / terapeuta</p>
+    </div>
 
-    <main>
-        <h2>Página en construcción</h2>
-        <p>Esta pantalla será desarrollada durante la implementación del proyecto.</p>
-    </main>
+    <a href="index.html" class="boton-salir">
+        Cerrar sesión
+    </a>
 
-    <footer>
-        <p>© 2026 Centro Nacional de Educación Hellen Keller</p>
-    </footer>
+</header>
+
+<nav class="menu-principal">
+
+    <a href="docente-dashboard.html" aria-current="page">
+        Inicio
+    </a>
+
+    <a href="estudiante-progreso.html">
+        Mis estudiantes
+    </a>
+
+    <a href="administrador-dashboard.html">
+        Panel Administrador
+    </a>
+
+</nav>
+
+<main class="contenido-dashboard">
+
+<section class="bienvenida">
+
+<h2>Bienvenido, Docente</h2>
+
+<p>
+Desde este panel puede consultar la información de sus estudiantes,
+registrar observaciones y revisar las actividades pendientes.
+</p>
+
+</section>
+
+<section class="rejilla-indicadores">
+
+<article class="tarjeta-indicador">
+
+<span class="icono-indicador">👩‍🎓</span>
+
+<div>
+
+<h3>Estudiantes asignados</h3>
+
+<p class="numero-indicador">
+24
+</p>
+
+</div>
+
+</article>
+
+<article class="tarjeta-indicador">
+
+<span class="icono-indicador">📝</span>
+
+<div>
+
+<h3>Observaciones</h3>
+
+<p class="numero-indicador">
+18
+</p>
+
+</div>
+
+</article>
+
+<article class="tarjeta-indicador">
+
+<span class="icono-indicador">📅</span>
+
+<div>
+
+<h3>Actividades del día</h3>
+
+<p class="numero-indicador">
+7
+</p>
+
+</div>
+
+</article>
+
+<article class="tarjeta-indicador">
+
+<span class="icono-indicador">✅</span>
+
+<div>
+
+<h3>Tareas completadas</h3>
+
+<p class="numero-indicador">
+42
+</p>
+
+</div>
+
+</article>
+
+</section>
+
+<section class="seccion-tabla">
+
+<div class="encabezado-seccion">
+
+<div>
+
+<h2>Agenda del día</h2>
+
+<p>
+Actividades programadas para hoy.
+</p>
+
+</div>
+
+</div>
+
+<div class="tabla-responsive">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Hora</th>
+
+<th>Actividad</th>
+
+<th>Grupo</th>
+
+<th>Estado</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>8:00 am</td>
+
+<td>Estimulación sensorial</td>
+
+<td>Grupo A</td>
+
+<td>
+<span class="estado estado-exitoso">
+Programada
+</span>
+</td>
+
+</tr>
+
+<tr>
+
+<td>10:00 am</td>
+
+<td>Seguimiento PEI</td>
+
+<td>Grupo B</td>
+
+<td>
+<span class="estado estado-pendiente">
+Pendiente
+</span>
+</td>
+
+</tr>
+
+<tr>
+
+<td>1:00 pm</td>
+
+<td>Reunión con encargados</td>
+
+<td>Individual</td>
+
+<td>
+<span class="estado estado-exitoso">
+Confirmada
+</span>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</section>
+
+<section class="acciones-rapidas">
+
+<h2>Acciones rápidas</h2>
+
+<div class="rejilla-acciones">
+
+<a href="#" class="tarjeta-accion">
+
+<span>📝</span>
+
+<strong>Registrar observación</strong>
+
+<small>Agregar comentarios del estudiante.</small>
+
+</a>
+
+<a href="#" class="tarjeta-accion">
+
+<span>📋</span>
+
+<strong>Actualizar PEI</strong>
+
+<small>Modificar objetivos individuales.</small>
+
+</a>
+
+<a href="#" class="tarjeta-accion">
+
+<span>📅</span>
+
+<strong>Consultar agenda</strong>
+
+<small>Ver actividades programadas.</small>
+
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+© 2026 Centro Nacional de Educación Hellen Keller
+
+</p>
+
+</footer>
 
 </body>
 

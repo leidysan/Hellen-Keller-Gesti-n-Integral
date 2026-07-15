@@ -4,22 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hellen Keller Gestión Integral</title>
+
+    <meta name="description"
+        content="Inicio de sesión del sistema Hellen Keller Gestión Integral.">
+
+    <title>Inicio de sesión | Hellen Keller Gestión Integral</title>
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
-<body>
+<body class="pagina-login">
 
     <header>
         <h1>Hellen Keller Gestión Integral</h1>
+        <p>Centro Nacional de Educación Hellen Keller</p>
     </header>
 
-    <main>
-        <h2>Página en construcción</h2>
-        <p>Esta pantalla será desarrollada durante la implementación del proyecto.</p>
+    <main class="login-principal">
+
+        <section class="contenedor-login" aria-labelledby="titulo-login">
+
+            <h2 id="titulo-login">Iniciar sesión</h2>
+
+            <p class="descripcion-login">
+                Ingrese sus datos para acceder al sistema.
+            </p>
+
+            <form action="administrador-dashboard.html">
+
+                <div class="campo">
+                    <label for="usuario">
+                        Correo electrónico o cédula
+                    </label>
+
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        placeholder="Ejemplo: usuario@correo.com"
+                        autocomplete="username"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="contrasena">
+                        Contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        placeholder="Ingrese su contraseña"
+                        autocomplete="current-password"
+                        required>
+                </div>
+
+                <div class="cuadro-verificacion">
+                    <input
+                        type="checkbox"
+                        id="verificacion"
+                        name="verificacion">
+
+                    <label for="verificacion">
+                        No soy un robot
+                    </label>
+                </div>
+
+                <button class="boton-login" type="submit">
+                    Ingresar
+                </button>
+
+            </form>
+
+            <div class="enlaces-login">
+
+                <a href="recuperar-contrasena.html">
+                    ¿Olvidó su contraseña?
+                </a>
+
+                <button class="boton-audio" type="button">
+                    🔊 Escuchar instrucciones
+                </button>
+
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
-        <p>© 2026 Centro Nacional de Educación Hellen Keller</p>
+        <p>
+            © 2026 Centro Nacional de Educación Hellen Keller
+        </p>
     </footer>
 
 </body>

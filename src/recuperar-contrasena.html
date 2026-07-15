@@ -4,22 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hellen Keller Gestión Integral</title>
+
+    <meta
+        name="description"
+        content="Recuperación de contraseña del sistema Hellen Keller Gestión Integral">
+
+    <title>Recuperar contraseña | Hellen Keller Gestión Integral</title>
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
-<body>
+<body class="pagina-login">
 
     <header>
+
         <h1>Hellen Keller Gestión Integral</h1>
+
+        <p>
+            Centro Nacional de Educación Hellen Keller
+        </p>
+
     </header>
 
-    <main>
-        <h2>Página en construcción</h2>
-        <p>Esta pantalla será desarrollada durante la implementación del proyecto.</p>
+    <main class="login-principal">
+
+        <section
+            class="contenedor-login"
+            aria-labelledby="titulo-recuperacion">
+
+            <h2 id="titulo-recuperacion">
+                Recuperar contraseña
+            </h2>
+
+            <p class="descripcion-login">
+                Ingrese su correo electrónico o número de cédula.
+                Le enviaremos instrucciones para restablecer su contraseña.
+            </p>
+
+            <form action="index.html">
+
+                <div class="campo">
+
+                    <label for="identificacion">
+                        Correo electrónico o cédula
+                    </label>
+
+                    <input
+                        type="text"
+                        id="identificacion"
+                        name="identificacion"
+                        placeholder="Ejemplo: usuario@correo.com"
+                        autocomplete="username"
+                        required>
+
+                </div>
+
+                <button
+                    class="boton-login"
+                    type="submit">
+
+                    Enviar instrucciones
+
+                </button>
+
+            </form>
+
+            <div class="enlaces-login">
+
+                <button
+                    class="boton-audio"
+                    type="button">
+
+                    🔊 Escuchar instrucciones
+
+                </button>
+
+                <a href="index.html">
+                    ← Regresar al inicio de sesión
+                </a>
+
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
-        <p>© 2026 Centro Nacional de Educación Hellen Keller</p>
+
+        <p>
+            © 2026 Centro Nacional de Educación Hellen Keller
+        </p>
+
     </footer>
 
 </body>

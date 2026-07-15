@@ -4,18 +4,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hellen Keller Gestión Integral</title>
+
+    <meta
+        name="description"
+        content="Gestión de usuarios del sistema Hellen Keller Gestión Integral">
+
+    <title>Gestión de usuarios | Hellen Keller Gestión Integral</title>
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Hellen Keller Gestión Integral</h1>
+    <header class="encabezado-sistema">
+
+        <div>
+            <h1>Hellen Keller Gestión Integral</h1>
+            <p>Gestión de usuarios</p>
+        </div>
+
+        <a class="boton-salir" href="index.html">
+            Cerrar sesión
+        </a>
+
     </header>
 
-    <main>
-        <h2>Página en construcción</h2>
-        <p>Esta pantalla será desarrollada durante la implementación del proyecto.</p>
+    <nav class="menu-principal" aria-label="Navegación del administrador">
+
+        <a href="administrador-dashboard.html">
+            Inicio
+        </a>
+
+        <a href="gestion-usuarios.html" aria-current="page">
+            Gestión de usuarios
+        </a>
+
+        <a href="gestion-programas.html">
+            Programas educativos
+        </a>
+
+    </nav>
+
+    <main class="contenido-dashboard">
+
+        <section class="encabezado-pagina">
+
+            <div>
+                <h2>Administración de usuarios</h2>
+
+                <p>
+                    Consulte, filtre y gestione los perfiles registrados en el sistema.
+                </p>
+            </div>
+
+            <button class="boton-principal" type="button">
+                + Agregar usuario
+            </button>
+
+        </section>
+
+        <section class="panel-filtros" aria-label="Filtros de usuarios">
+
+            <div class="campo-filtro">
+
+                <label for="buscar-usuario">
+                    Buscar usuario
+                </label>
+
+                <input
+                    type="search"
+                    id="buscar-usuario"
+                    name="buscar-usuario"
+                    placeholder="Nombre, correo o cédula">
+
+            </div>
+
+            <div class="campo-filtro">
+
+                <label for="filtro-rol">
+                    Filtrar por rol
+                </label>
+
+                <select id="filtro-rol" name="filtro-rol">
+                    <option value="">Todos los roles</option>
+                    <option value="administrador">Administrador</option>
+                    <option value="docente">Docente</option>
+                    <option value="terapeuta">Terapeuta</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="encargado">Encargado legal</option>
+                </select>
+
+            </div>
+
+            <div class="campo-filtro">
+
+                <label for="filtro-estado">
+                    Estado
+                </label>
+
+                <select id="filtro-estado" name="filtro-estado">
+                    <option value="">Todos</option>
+                    <option value="activo">Activo</option>
+                    <option value="inactivo">Inactivo</option>
+                </select>
+
+            </div>
+
+            <button class="boton-secundario boton-filtrar" type="button">
+                Aplicar filtros
+            </button>
+
+        </section>
+
+        <section class="seccion-tabla">
+
+            <div class="encabezado-seccion">
+
+                <div>
+                    <h2>Usuarios registrados</h2>
+                    <p>Listado general de perfiles activos e inactivos.</p>
+                </div>
+
+                <span class="contador-registros">
+                    6 registros
+                </span>
+
+            </div>
+
+            <div class="tabla-responsive">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Identificación</th>
+                            <th scope="col">Correo</th>
+                            <th scope="col">Rol</th>
+                            <th scope="col">Estado</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Andrea Solano</td>
+                            <td>1-1234-5678</td>
+                            <td>andrea.solano@hellenkeller.cr</td>
+                            <td>Administradora</td>
+                            <td>
+                                <span class="estado estado-exitoso">
+                                    Activo
+                                </span>
+                            </td>
+                            <td class="acciones-tabla">
+                                <button class="boton-tabla" type="button">
+                                    Editar
+                                </button>
+                                <button class="boton-tabla boton-peligro" type="button">
+                                    Desactivar
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Laura Rodríguez</td>
+                            <td>2-2345-6789</td>
+                            <td>laura.rodriguez@hellenkeller.cr</td>
+                            <td>Docente</td>
+                            <td>
+                                <span class="estado estado-exitoso">
+                                    Activo
+                                </span>
+                            </td>
+                            <td class="acciones-tabla">
+                                <button class="boton-tabla" type="button">
+                                    Editar
+                                </button>
+                                <button class="boton-tabla boton-peligro" type="button">
+                                    Desactivar
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Carlos Méndez</td>
+                            <td>3-3456-7890</td>
+                            <td>carlos.mendez@hellenkeller.cr</td>
+                            <td>Terapeuta</td>
+                            <td>
+                                <span class="estado estado-exitoso">
+                                    Activo
+                                </span>
+                            </td>
+                            <td class="acciones-tabla">
+                                <button class="boton-tabla" type="button">
+                                    Editar
+                                </button>
+                                <button class="boton-tabla boton-peligro" type="button">
+                                    Desactivar
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Daniela Vargas</td>
+                            <td>4-4567-8901</td>
+                            <td>daniela.vargas@estudiante.cr</td>
+                            <td>Estudiante</td>
+                            <td>
+                                <span class="estado estado-exitoso">
+                                    Activo
+                                </span>
+                            </td>
+                            <td class="acciones-tabla">
+                                <button class="boton-tabla" type="button">
+                                    Editar
+                                </button>
+                                <button class="boton-tabla boton-peligro" type="button">
+                                    Desactivar
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>María Fernández</td>
+                            <td>5-5678-9012</td>
+                            <td>maria.fernandez@correo.com</td>
+                            <td>Encargada legal</td>
+                            <td>
+                                <span class="estado estado-exitoso">
+                                    Activo
+                                </span>
+                            </td>
+                            <td class="acciones-tabla">
+                                <button class="boton-tabla" type="button">
+                                    Editar
+                                </button>
+                                <button class="boton-tabla boton-peligro" type="button">
+                                    Desactivar
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>José Ramírez</td>
+                            <td>6-6789-0123</td>
+                            <td>jose.ramirez@correo.com</td>
+                            <td>Docente</td>
+                            <td>
+                                <span class="estado estado-inactivo">
+                                    Inactivo
+                                </span>
+                            </td>
+                            <td class="acciones-tabla">
+                                <button class="boton-tabla" type="button">
+                                    Editar
+                                </button>
+                                <button class="boton-tabla boton-activar" type="button">
+                                    Activar
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
